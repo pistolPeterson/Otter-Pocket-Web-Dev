@@ -1,127 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: "Inter";
-  }
-  
-  /*NAV BAR START*/
-  nav {
-      display: flex;
-      align-items: center;
-      height: 15vh;
-      width: 100%;
-      font-size: 18px;
-      justify-content: right;
-      padding: 1.5rem 3.5rem;
-      background: #00A7E1;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      color: white;
-      z-index: 1;
-    }
-    
-    nav ul {
-      display: flex;
-      justify-content: space-around;
-      width: 28rem;
-    }
-    
-    nav ul li {
-      display: inline-block;
-      font-weight: bold;
-    }
-  
-    nav ul a {
-      text-decoration: none;
-      color: white;
-    }
-  
-    nav li a:hover {
-      color: #63768D;
-      transition: 0.4s ease;
-    }
-  
-    nav button {
-      position: absolute;
-      width: 133px;
-      height: 50px;
-      left: 1198px;
-      top: 31px;
-      border: none;
-  
-      mix-blend-mode: normal;
-      border-radius: 15px;
-      color: white;
-      font-size: 20px;
-  
-      cursor:pointer;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter";
+}
+
+/*NAV BAR START*/
+nav {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  font-size: 18px;
+  justify-content: right;
+  padding: 1.5rem 3.5rem;
+  background: #00A7E1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 28rem;
+}
+
+nav ul li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  color: #63768D;
+  transition: 0.4s ease;
+}
+
+nav button {
+  position: absolute;
+  width: 133px;
+  height: 50px;
+  left: 1198px;
+  top: 31px;
+  border: none;
+
+  mix-blend-mode: normal;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+
+  cursor: pointer;
+}
 
 /*generator body and button*/
 .generator-content {
-    padding: 6rem 24rem;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  padding: 6rem 24rem;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
 
-    color: #000000;
+  color: #000000;
 }
 
 
-.generator-content button{
-  
-    width: 142px;
-    height: 42px;
+.generator-content button {
 
-    background: #FF865A;
-    border-radius: 15px;
+  width: 142px;
+  height: 42px;
+
+  background: #FF865A;
+  border-radius: 15px;
 }
 
-#otterGunPic {
+#otterPicId {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
-  height: 25%;
+
   border-radius: 5%;
+  width: 250px;
+  height: 250px;
+
+  /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+  object-fit: scale-down;
+
   visibility: hidden;
 }
 
 button:hover {
-    color: #2e1309;
-    transition: 0.4s ease;
+  color: #2e1309;
+  transition: 0.4s ease;
 }
 
 footer {
-        background-color: #7BD67E;
-        padding: 1.25rem;
-        text-align: center;
-        color: #63768D;
-        background-color: #7BD67E;
-        opacity: 1;
-    /* width: 100vmax;
+  background-color: #7BD67E;
+  padding: 1.25rem;
+  text-align: center;
+  color: #63768D;
+  background-color: #7BD67E;
+  opacity: 1;
+  /* width: 100vmax;
     top: 100vmin;
     
 
     background: #7BD67E; */
 }
-    /* position: absolute;
+
+/* position: absolute;
     width: 100vmin;
     height: 90vmin;
     left: 0px;
