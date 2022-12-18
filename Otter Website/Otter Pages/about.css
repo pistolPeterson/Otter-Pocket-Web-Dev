@@ -18,55 +18,55 @@ html {
   
   /*NAV BAR START*/
   nav {
-      display: flex;
-      align-items: center;
-      height: 15vh;
-      width: 100%;
-      font-size: 18px;
-      justify-content: right;
-      padding: 1.5rem 3.5rem;
-      background: #00A7E1;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      color: white;
-      z-index: 1;
-    }
-    
-    nav ul {
-      display: flex;
-      justify-content: space-around;
-      width: 28
-    }
-    
-    nav ul li {
-      display: inline-block;
-      font-weight: bold;
-    }
-  
-    nav ul a {
-      text-decoration: none;
-      color: white;
-    }
-  
-    nav li a:hover {
-      color: #63768D;
-      transition: 0.4s ease;
-    }
-  
-    nav button {
-      position: absolute;
-      width: 133px;
-      height: 50px;
-      left: 1198px;
-      top: 31px;
-      border: none;
-  
-      mix-blend-mode: normal;
-      border-radius: 15px;
-      color: white;
-      font-size: 20px;
-  
-      cursor:pointer;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    font-size: 18px;
+    justify-content: right;
+    padding: 1.5rem 3.5rem;
+    background: #00A7E1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    z-index: 1;
   }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 28rem;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav li a:hover {
+    color: #63768D;
+    transition: 0.4s ease;
+  }
+
+  nav button {
+    position: absolute;
+    width: 133px;
+    height: 50px;
+    left: 1198px;
+    top: 31px;
+    border: none;
+
+    mix-blend-mode: normal;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+
+    cursor:pointer;
+}
 
 .aboutUs {
     padding: 6rem 24rem;
