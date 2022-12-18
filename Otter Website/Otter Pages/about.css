@@ -27,13 +27,14 @@ html {
       padding: 1.5rem 3.5rem;
       background: #00A7E1;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: white;
       z-index: 1;
     }
     
     nav ul {
       display: flex;
       justify-content: space-around;
-      width: 28rem;
+      width: 28
     }
     
     nav ul li {
