@@ -66,19 +66,14 @@ nav button {
 
 /*generator body and button*/
 .generator-content {
-  <<<<<<< HEAD padding: 6rem 24rem;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  =======padding: 6rem 24rem;
+
+  padding: 6rem 24rem;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  >>>>>>>jaelene-cool-branch font-family: 'Inter';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
