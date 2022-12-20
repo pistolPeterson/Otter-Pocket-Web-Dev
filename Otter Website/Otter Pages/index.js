@@ -33,3 +33,17 @@ function getAnotherIndexFromPic() {
     newIndex = getRandomInt(0, amtOfOtterPics);
     return newIndex;
 }
+
+
+/*
+start-> Initialize an int array of size amtOfOtterPics to 0
+
+when button is press and image is selected, increment that array place 
+
+
+in favorites, show 4 images of a default picture 
+make temp array and sort it, choose top 4 and load them in the images, make this another on load method  
+
+
+
+*/
