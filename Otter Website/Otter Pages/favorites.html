@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>OtterPocket</title>
-    <link rel ="stylesheet" href="style.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <nav>
-        <!--<h1>Logo</h1>-->
-        <ul>
-            <li><a href="./index.html">Home</a></li> 
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./favorites.html">Favorites</a></li>
-        </ul>
-      </nav>
-      <!--Nav Bar End-->
-      <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>OtterPocket</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+</head>
 
-        <h2>Responsive Image Gallery</h2>
-        
-        <h4>Resize the browser window to see the effect.</h4>
-        
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="img_5terre.jpg">
-              <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-        </div>
-        
-        
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="img_forest.jpg">
-              <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-        </div>
-        
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="img_lights.jpg">
-              <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-        </div>
-        
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="ottermafia.jpg">
-              <img src="ottermafia.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-        </div>
-        
-        <div class="clearfix"></div>
-        
-  
-        </body>
-        </html>
-      
+<body>
+  <nav>
+    <!--<h1>Logo</h1>-->
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./favorites.html">Favorites</a></li>
+    </ul>
+  </nav>
+  <!--Nav Bar End-->
+
+  <body onload="initializeImages()">
+
+    <h2>Responsive Image Gallery</h2>
+
+    <h4>Resize the browser window to see the effect.</h4>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img_5terre.jpg" alt="Cinque Terre" id="FavPic1" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="img_forest.jpg" alt="Forest" id="FavPic2" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="img_lights.jpg" alt="Northern Lights" id="FavPic3" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="ottermafia.jpg">
+          <img src="ottermafia.jpg" alt="Mountains" id="FavPic4" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+  </body>
+
+</html>

@@ -1,8 +1,13 @@
-OtterPicPrefix = "Otter Pics\\OtterPic"; //every otter pic name starts with this string
-OtterPicExt = ".jpg"; //every otter pic is a jpg file, we add this at the end of the string 
+const OtterPicPrefix = "Otter Pics\\OtterPic"; //every otter pic name starts with this string
+const OtterPicExt = ".jpg"; //every otter pic is a jpg file, we add this at the end of the string 
 
 otterPicIndex = 1; //this number is what differentiates each picture, we will pick a random number, we are making it 1 by default 
-amtOfOtterPics = 15;//How many otter pics are in the otter pages? 
+const amtOfOtterPics = 15;//How many otter pics are in the otter pages? 
+
+let picFavoriteArray = new Array(amtOfOtterPics).fill(0);
+
+
+
 
 function showOtter() {
     var prevIndex = otterPicIndex;
@@ -15,6 +20,9 @@ function showOtter() {
     if (prevIndex == otterPicIndex)
         otterPicIndex = getAnotherIndexFromPic();
 
+    picFavoriteArray[otterPicIndex]++;
+    console.log(picFavoriteArray);
+    localStorage.setItem('links', JSON.stringify(picFavoriteArray));
     //set up the name of the URL of the img, using its index 
     document.getElementById("otterPicId").src = OtterPicPrefix + otterPicIndex.toString() + OtterPicExt;
 
@@ -34,7 +42,27 @@ function getAnotherIndexFromPic() {
     return newIndex;
 }
 
+//SHOW FAVORITES LOGIC 
 
+
+function initializeImages() {
+    const storedArrays = JSON.parse(localStorage.getItem('links'));
+    console.log(storedArrays);
+    document.getElementById("FavPic1").src = OtterPicPrefix + findLargestFromIndex() + OtterPicExt; //find largetst amt index and put it here
+    document.getElementById("FavPic2").src = OtterPicPrefix + 4 + OtterPicExt;
+    document.getElementById("FavPic3").src = OtterPicPrefix + 4 + OtterPicExt;
+    document.getElementById("FavPic4").src = OtterPicPrefix + 4 + OtterPicExt;
+}
+
+
+function findLargestFromIndex() {
+    const storedArrays = JSON.parse(localStorage.getItem('links'));
+
+    const max = Math.max(...storedArrays);
+
+    const index = storedArrays.indexOf(max);
+    return index;
+}
 /*
 start-> Initialize an int array of size amtOfOtterPics to 0
 
