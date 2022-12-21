@@ -2,7 +2,7 @@ OtterPicPrefix = "Otter Pics\\OtterPic"; //every otter pic name starts with this
 OtterPicExt = ".jpg"; //every otter pic is a jpg file, we add this at the end of the string 
 
 otterPicIndex = 1; //this number is what differentiates each picture, we will pick a random number, we are making it 1 by default 
-amtOfOtterPics = 3;//How many otter pics are in the otter pages? 
+amtOfOtterPics = 15;//How many otter pics are in the otter pages? 
 
 function showOtter() {
     var prevIndex = otterPicIndex;
