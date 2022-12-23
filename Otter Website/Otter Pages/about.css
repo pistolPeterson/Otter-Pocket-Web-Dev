@@ -69,14 +69,13 @@ html {
 }
 
 .aboutUs {
-    padding: 6rem 24rem;
+    padding: 2rem 10rem;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -85,6 +84,25 @@ html {
 
     color: #000000;
 }
+
+
+.contact_cards{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+
+img{
+  width: 254.35px;
+  height: 242px;
+  margin-top:2rem;
+  margin-inline:2rem;
+}
+
+
   
   footer {
     background-color: #7BD67E;
