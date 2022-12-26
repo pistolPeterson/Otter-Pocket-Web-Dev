@@ -70,10 +70,10 @@ nav button {
   padding: 6rem 24rem;
   height: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   text-align: center;
-  font-family: 'Inter';
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -84,15 +84,48 @@ nav button {
 }
 
 
-.generator-content button {
+/* .generator-content button {
 
   width: 142px;
-  height: 42px;
+  height: 42px; 
 
+  width: 200px;
+  margin: auto;
+  display: inline;
 
   background: #FF865A;
   border-radius: 15px;
 }
+
+.favorite-content button {
+
+  width: 200px;
+  margin: auto;
+  display: inline;
+
+  background: #FF865A;
+  border-radius: 15px;
+} */
+
+
+.button-inputs {
+  width: 960px;
+  margin: 0 auto;
+  align-content: center;
+  justify-items: center;
+}
+
+.action-button {
+  display: inline-block;
+  width: calc(50% - 4px);
+  margin: 0 auto;
+}
+
+button.button-inputs{
+  width: 142px;
+  height: 42px; 
+}
+
 
 #otterPicId {
   display: block;
