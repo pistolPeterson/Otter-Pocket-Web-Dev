@@ -121,9 +121,9 @@ nav button {
   margin: 0 auto;
 }
 
-button.button-inputs{
+button.button-inputs {
   width: 142px;
-  height: 42px; 
+  height: 42px;
 }
 
 
@@ -132,12 +132,13 @@ button.button-inputs{
   margin-left: auto;
   margin-right: auto;
 
-  /*Scale down will take the necessary specified space without stretching the image*/
-  object-fit: scale-down;
+  width: 750px;
+  height: 750px;
+
+  object-fit: contain;
 
   top: auto;
-  width: 25%;
-  height: 25%;
+
   border-radius: 5%;
   visibility: hidden;
 }
