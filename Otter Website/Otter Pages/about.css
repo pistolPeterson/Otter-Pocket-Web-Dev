@@ -85,14 +85,25 @@ html {
     color: #000000;
 }
 
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
 
 .contact_cards{
   display: flex;
   align-content: center;
   justify-content: center;
   text-align: center;
-  position: relative;
-  top: -20px;
+  top: -5vh/* display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  
+  ; */
 }
 
 img{
