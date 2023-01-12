@@ -66,12 +66,16 @@ nav button {
 
 /*generator body and button*/
 .generator-content {
-
-  padding: 6rem 24rem;
-  height: auto;
+  padding: 5rem 5rem;
+  height: 20vh;
+  width: 100vh;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  justify-content: center;
   text-align: center;
 
   font-style: normal;
@@ -81,6 +85,25 @@ nav button {
   text-align: center;
 
   color: #000000;
+  /*
+  padding: 6rem 24rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+
+  display: flex;
+  
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #000000;
+  */
 }
 
 
@@ -149,7 +172,7 @@ button:hover {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
