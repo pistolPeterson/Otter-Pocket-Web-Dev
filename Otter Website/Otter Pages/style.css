@@ -123,6 +123,7 @@ nav button {
 #FavoriteButton {
 
   width: 200px;
+  height: 42px;
   margin: auto;
   display: inline;
 
